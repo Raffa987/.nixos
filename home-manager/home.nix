@@ -8,6 +8,10 @@
 {
   imports = [
     ./symlinks.nix
+    ./fish.nix
+    ./gtk.nix
+    ./git.nix
+    ./hyprpaper.nix
   ];
 
   home = {

@@ -117,18 +117,16 @@
     kitty
     discord
     nixfmt-rfc-style
-    vscodium
+    vscode
     firefox
     libgcc
+    gcc
     fastfetch
     p7zip
     nemo
-    fish
     hyprpaper
     hyprpicker
-    gtk3
-    gtk4
-    gnome-themes-extra
+    adwaita-icon-theme
     adwaita-qt
   ];
 
