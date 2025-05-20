@@ -33,9 +33,18 @@
           ];
         in
         {
-          serif = [ "DejaVu Serif" "Noto Sans CJK JP" ];
-          sansSerif = [ "DejaVu Sans" "Noto Sans CJK JP" ];
-          monospace = [ "DejaVu Sans Mono" "Noto Sans Mono CJK JP" ];
+          serif = [
+            "DejaVu Serif"
+            "Noto Sans CJK JP"
+          ];
+          sansSerif = [
+            "DejaVu Sans"
+            "Noto Sans CJK JP"
+          ];
+          monospace = [
+            "DejaVu Sans Mono"
+            "Noto Sans Mono CJK JP"
+          ];
         };
     };
   };
@@ -117,7 +126,10 @@
     fish
     hyprpaper
     hyprpicker
-    waybar
+    gtk3
+    gtk4
+    gnome-themes-extra
+    adwaita-qt
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
