@@ -10,6 +10,35 @@
     ./hardware-configuration.nix
     ./battery.nix
   ];
+  fonts = {
+    enableDefaultPackages = true;
+    packages = with pkgs; [
+      noto-fonts
+      noto-fonts-cjk-sans
+      source-han-sans
+      source-han-serif
+      texlivePackages.fontawesome
+      udev-gothic-nf
+      adwaita-icon-theme
+      nerdfonts
+    ];
+    fontconfig = {
+      defaultFonts =
+        let
+          fontlist = [
+            "DejaVu Sans"
+            "Book"
+            "Noto Sans CJK JP"
+            "Noto Sans Mono CJK JP"
+          ];
+        in
+        {
+          serif = [ "DejaVu Serif" "Noto Sans CJK JP" ];
+          sansSerif = [ "DejaVu Sans" "Noto Sans CJK JP" ];
+          monospace = [ "DejaVu Sans Mono" "Noto Sans Mono CJK JP" ];
+        };
+    };
+  };
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
