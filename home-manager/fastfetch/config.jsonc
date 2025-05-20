@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/fastfetch-cli/fastfetch/refs/heads/dev/doc/json_schema.json",
+  "display": {
+    "bar": {
+      "borderLeft": "[ ,",
+      "borderRight": " ]",
+      "charElapsed": "■",
+      "charTotal": "-",
+      "width": 10
+    },
+    "brightColor": true,
+    "color": "38;2;170;133;231",
+    "disableLinewrap": true,
+    "hideCursor": true,
+    "key": {
+      "paddingLeft": 4
+    },
+    "percent": {
+      "ndigits": 1
+    },
+    "separator": ": "
+  },
+  "logo": {
+    "source": "/home/raffaele/.nixos/home-manager/fastfetch/luna.txt",
+    "type": "file",
+    "color": {
+      "1": "38;2;253;182;241"
+    }
+  },
+  "modules": [
+    "break",
+    {
+      "type": "cpu",
+      "format": "{1:17}",
+      "temp": true
+    },
+    "memory",
+    {
+      "type": "os",
+      "format": "{3}"
+    },
+    "wm",
+    "kernel",
+    "break",
+    "terminal",
+    "shell",
+    "break",
+    "theme",
+    "cursor",
+    "icons",
+    "break",
+    "uptime",
+    "battery",
+    "break",
+    "break",
+    {
+      "type": "colors",
+      "paddingLeft": 4,
+      "symbol": "background"
+    }
+  ]
+}
