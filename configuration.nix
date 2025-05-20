@@ -89,7 +89,6 @@
     hyprpaper
     hyprpicker
     waybar
-    git
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

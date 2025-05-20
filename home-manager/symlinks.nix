@@ -14,6 +14,13 @@ in
     ".config/kitty".source = link "/etc/nixos/home-manager/kitty";
   };
 
+  programs = {
+    git = {
+      enable = true;
+      userEmail = "raffa.cannizzo@gmail.com";
+      userName = "Raffa987";
+    };
+  };
   services.hyprpaper = {
     enable = true;
 
