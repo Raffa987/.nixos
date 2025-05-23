@@ -22,9 +22,10 @@
   },
   "logo": {
     "source": "/home/raffaele/.nixos/home-manager/fastfetch/luna.txt",
+    
     "type": "file",
     "color": {
-      "1": "38;2;253;182;241"
+      "1": "white", 
     }
   },
   "modules": [

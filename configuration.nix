@@ -128,6 +128,8 @@
     hyprpicker
     adwaita-icon-theme
     adwaita-qt
+    hyprshot
+    ags
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

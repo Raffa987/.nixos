@@ -7,13 +7,19 @@
       url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    #ags = {
-    #  url = "github:aylur/ags";
-     # inputs.nixpkgs.follows = "nixpkgs";
-    #};
+    ags = {
+      url = "github:aylur/ags";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      home-manager,
+      ...
+    }@inputs:
     let
       username = "raffaele";
       system = "x86_64-linux";
