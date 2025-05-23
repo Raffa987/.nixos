@@ -11,7 +11,7 @@
     ./fish.nix
     ./gtk.nix
     ./git.nix
-    #./ags.nix
+    ./ags.nix
     ./hyprpaper.nix
   ];
 
