@@ -121,6 +121,7 @@
     firefox
     libgcc
     gcc
+    network
     fastfetch
     p7zip
     nemo

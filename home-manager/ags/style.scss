@@ -1,20 +1,29 @@
-// https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss
-$fg-color: #{"@theme_fg_color"};
-$bg-color: #{"@theme_bg_color"};
-
 window.Bar {
-    background: transparent;
-    color: $fg-color;
-    font-weight: bold;
-
-    >centerbox {
-        background: $bg-color;
-        border-radius: 10px;
-        margin: 8px;
-    }
-
-    button {
-        border-radius: 8px;
-        margin: 2px;
-    }
+    background-color: transparent;
 }
+.Firefox {
+    background: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    box-shadow: none;
+    border: none;
+}   
+
+.icons {
+    text-shadow: none;
+    box-shadow: none;
+    border: 0px;
+    outline: none;
+    font-size: 12px;    
+}
+
+.code {
+    background: transparent;
+    border: none;
+}
+
+.clock {
+    background: #030214;
+    border: none;
+    font-size: 12px;
+  }
