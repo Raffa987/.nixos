@@ -1,20 +1,21 @@
 window.Bar {
     background-color: transparent;
 }
+
 .Firefox {
     background: transparent;
     box-shadow: none;
     text-shadow: none;
     box-shadow: none;
     border: none;
-}   
+}
 
 .icons {
     text-shadow: none;
     box-shadow: none;
     border: 0px;
     outline: none;
-    font-size: 12px;    
+    font-size: 14px;
 }
 
 .code {
@@ -26,4 +27,10 @@ window.Bar {
     background: #030214;
     border: none;
     font-size: 12px;
-  }
+}
+
+.network {
+    background: transparent;
+    border: none;
+    color: white;
+}

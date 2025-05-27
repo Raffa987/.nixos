@@ -1,8 +1,10 @@
 import { App, Astal, Gtk, Gdk } from "astal/gtk3"
 import { bind, exec, Variable } from "astal"
 import GdkPixbuf from "gi://GdkPixbuf?version=2.0"
-import { getLogo } from "./functions"
 import Network from "gi://AstalNetwork"
+import { reveal } from "./Network_menu";
+
+
 
 /*
  * Restituisce la data formattata come DD/MM/YY hh:mm
@@ -17,21 +19,30 @@ function formatDate(date: Date) {
     return `${hours}:${minutes} ${day}/${month}/${year}`;
 }
 
-export default function Bar(gdkmonitor: Gdk.Monitor) {
+export default function Bar(monitor: number) {
     const { TOP, LEFT, RIGHT } = Astal.WindowAnchor
 
     return <window
         className="Bar"
-        decorated:false
-        gdkmonitor={gdkmonitor}
+        decorated= {false}
+        monitor={monitor}
         exclusivity={Astal.Exclusivity.EXCLUSIVE}
         anchor={TOP | LEFT | RIGHT}
         application={App}>
         <box>
             <button
+                className="network"
+                onClick={self => {reveal()
+                }}
+            >
+                <icon
+                    className="icons"
+                    icon={bind(Network.get_default().wifi, 'iconName').as(v => v)}
+                ></icon>
+            </button>
+            <button
                 className="Firefox"
                 onClicked="firefox"
-                //halign={Gtk.Align.START}
             >
                 <icon
                     className="icons"
@@ -41,13 +52,12 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
             <button
                 className="code"
                 onClicked="code"
-                //halign={Gtk.Align.START}
             >
                 <icon
                     className="icons"
                     icon="vscode"
                 ></icon>
-                </button>
+            </button>
             <box />
             <box hexpand={true}></box>
             <button

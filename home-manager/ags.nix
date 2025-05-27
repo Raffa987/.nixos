@@ -10,8 +10,10 @@
     enable = true;
 
     extraPackages = with pkgs; [
-      inputs.ags.packages.${pkgs.system}.battery
       fzf
-    ];
+    ] ++ (with inputs.ags.packages.${pkgs.system}; [
+      battery
+      network
+    ]);
   };
 }

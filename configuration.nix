@@ -20,7 +20,6 @@
       texlivePackages.fontawesome
       udev-gothic-nf
       adwaita-icon-theme
-      nerdfonts
     ];
     fontconfig = {
       defaultFonts =
@@ -121,7 +120,6 @@
     firefox
     libgcc
     gcc
-    network
     fastfetch
     p7zip
     nemo
@@ -130,7 +128,8 @@
     adwaita-icon-theme
     adwaita-qt
     hyprshot
-    typescript2
+    typescript
+    #node_24
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
