@@ -34,3 +34,40 @@ window.Bar {
     border: none;
     color: white;
 }
+
+.Menu {
+    border: none;
+}
+
+.Networkscrollable {
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+
+    * {
+        outline: none;
+        border: none;
+    }
+}
+
+.network_button {
+    background: transparent;
+    border: 1px;
+    border-color: black;
+}
+
+.background_clickable {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.closeNetwork {
+    background: transparent;
+}
+
+.closeNetwork, .closeNetwork * {
+    outline: none;
+    border: none;
+}

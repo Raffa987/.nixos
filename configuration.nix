@@ -129,7 +129,7 @@
     adwaita-qt
     hyprshot
     typescript
-    #node_24
+    nodejs_24
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

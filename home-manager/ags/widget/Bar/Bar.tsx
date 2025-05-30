@@ -32,7 +32,8 @@ export default function Bar(monitor: number) {
         <box>
             <button
                 className="network"
-                onClick={self => {reveal()
+                onClick={self => {
+                    reveal()
                 }}
             >
                 <icon

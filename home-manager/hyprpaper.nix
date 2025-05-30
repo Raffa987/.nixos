@@ -13,7 +13,7 @@
       ];
 
       wallpaper = [
-        "eDP-1, /home/raffaele/.nixos/home-manager/wallpaper/Sailor-Moon-wallpaper-for-desktop.jpg"
+        "eDP-2, /home/raffaele/.nixos/home-manager/wallpaper/Sailor-Moon-wallpaper-for-desktop.jpg"
       ];
     };
   };
