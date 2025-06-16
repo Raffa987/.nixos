@@ -67,7 +67,15 @@ window.Bar {
     background: transparent;
 }
 
-.closeNetwork, .closeNetwork * {
+.closeNetwork,
+.closeNetwork * {
     outline: none;
     border: none;
+}
+
+.shutdown {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-top: 7px;
 }

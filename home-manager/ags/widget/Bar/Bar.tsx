@@ -24,12 +24,19 @@ export default function Bar(monitor: number) {
 
     return <window
         className="Bar"
-        decorated= {false}
+        decorated={false}
         monitor={monitor}
         exclusivity={Astal.Exclusivity.EXCLUSIVE}
         anchor={TOP | LEFT | RIGHT}
         application={App}>
         <box>
+            <button
+                className="shutdown"
+                halign={Gtk.Align.END}>
+                <label
+                    label=""
+                    className={"icons"}></label>
+            </button>
             <button
                 className="network"
                 onClick={self => {
