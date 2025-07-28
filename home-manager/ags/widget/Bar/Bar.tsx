@@ -3,6 +3,7 @@ import { bind, exec, Variable } from "astal"
 import GdkPixbuf from "gi://GdkPixbuf?version=2.0"
 import Network from "gi://AstalNetwork"
 import { reveal } from "./Network_menu";
+import { revealShutdown } from "./Shutdown_menu";
 
 
 
@@ -32,7 +33,10 @@ export default function Bar(monitor: number) {
         <box>
             <button
                 className="shutdown"
-                halign={Gtk.Align.END}>
+                halign={Gtk.Align.END}
+                onClick={self => {
+                    revealShutdown()
+                }}>
                 <label
                     label=""
                     className={"icons"}></label>
