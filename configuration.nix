@@ -130,7 +130,6 @@
     hyprshot
     typescript
     nodejs_24
-    python
   ];
 
    services.logind.extraConfig = ''
