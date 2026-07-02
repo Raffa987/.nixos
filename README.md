@@ -40,3 +40,8 @@ cd ~/.nixos
 
 # Rebuild the system and apply Home Manager configurations
 sudo nixos-rebuild switch --flake .#your-hostname
+```
+
+## 🎨 Credits & Wallpapers
+
+* **Frieren Wallpaper & ASCII Art:** Found on Google (artist unknown). If you are the original artist, please open an issue or contact me so I can give you proper credit!
