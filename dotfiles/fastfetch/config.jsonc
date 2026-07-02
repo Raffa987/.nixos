@@ -17,7 +17,7 @@
     "separator": "˗♡˗ "
   },
   "logo": {
-    "source": "/home/raffaele/.nixos/home-manager/fastfetch/logo.txt",
+    "source": "/home/raffaele/.nixos/dotfiles/fastfetch/logo.txt",
     
     "type": "file",
     "color": {
