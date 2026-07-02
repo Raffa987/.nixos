@@ -1,3 +1,4 @@
+#WIP
 # ❄️ My NixOS Configuration
 
 A unified and reproducible NixOS configuration managed via **Flakes** and **Home Manager**.
