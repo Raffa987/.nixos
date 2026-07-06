@@ -12,6 +12,7 @@ I have built some custom widgets and functionalities tailored to my workflow:
 * **`Super + \`** (Win + \\): Opens a drop-down mini terminal in the top-right corner.
 * **`Alt + Z`**: Toggles a hardware statistics widget (CPU, RAM, etc.) in the top-right corner. 
     > **Note:** This hardware widget relies on a custom library. You can find it in my other repository here: *[https://github.com/Raffa987/libmystats]*
+* **`Alt + B`**: Toggles the taskbar.
 
 ## 🛠️ Tech Stack
 
