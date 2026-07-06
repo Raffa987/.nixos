@@ -13,6 +13,10 @@ function AppToggleBox() {
 
     requests.listen("bar_toggle", () => {
       app.toggle_window("bar");
+      const win = app.get_window("menu")
+      if (win?.visible) {
+        win.set_visible(false)
+      }
     })
 
     return emptyBox 
