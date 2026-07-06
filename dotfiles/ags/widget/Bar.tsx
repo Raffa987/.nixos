@@ -6,6 +6,17 @@ import { Icons } from "./End/iconTray"
 import requests from "../request"
 
 
+
+function AppToggleBox() {
+    const emptyBox = new Gtk.Box()
+    emptyBox.hexpand = false;
+
+    requests.listen("bar_toggle", () => {
+      app.toggle_window("bar");
+    })
+
+    return emptyBox 
+}
 export default function Bar(gdkmonitor: Gdk.Monitor) {
   const { TOP, LEFT, RIGHT } = Astal.WindowAnchor
 
@@ -21,6 +32,7 @@ export default function Bar(gdkmonitor: Gdk.Monitor) {
       anchor={TOP | LEFT | RIGHT}
       application={app}
     >
+      <AppToggleBox/>
       <box>
         <Apps />
         <box hexpand={true} />
