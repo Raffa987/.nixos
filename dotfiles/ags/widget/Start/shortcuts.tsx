@@ -15,6 +15,10 @@ export function Apps() {
             <button onClicked={() => execAsync("discord")} hexpand={false}>
                 <image iconName={"discord"} pixelSize={14} />
             </button>
+            <button
+            onClicked={() => execAsync("steam")} hexpand={false}>
+                <image iconName={"steam"} pixelSize={14}/>
+            </button>
         </box>
         <box hexpand={true}></box>
     </box>
