@@ -1,14 +1,20 @@
 import app from "ags/gtk4/app"
 import { Astal, Gtk, Gdk } from "ags/gtk4"
-import { exec } from "ags/process"
+import { exec, execAsync } from "ags/process"
 import { createPoll } from "ags/time"
 import requests from "../request"
+import { monitorFile, readFile } from "ags/file"
 
-const stats_label = createPoll("", 1000, '/home/raffaele/statsOverlay/build/statsGet')
+const stats_label = execAsync('/home/raffaele/statsOverlay/build/getStats')
+
+const file_path: string = "/dev/shm/stats_output.txt"
 
 function CreateBox() {
   const label = new Gtk.Label()
-  stats_label.subscribe(() => label.set_label(stats_label.peek()))
+  
+  monitorFile(file_path,
+    () => {label.label = readFile(file_path)}
+  )
 
   const box = new Gtk.Box()
   box.set_visible(true)
